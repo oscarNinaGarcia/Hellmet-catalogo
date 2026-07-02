@@ -26,7 +26,7 @@ const PRODUCTS = [
       ,"assets/Screenshot_20260630-155927.png"
     ],
   },
-  {
+  /*{
     id: 2,
     slug: "sentinel-modular",
     name: "Sentinel Modular",
@@ -113,5 +113,5 @@ const PRODUCTS = [
     ],
     price: "150",
     photos: 3,
-  },
+  },*/
 ];
