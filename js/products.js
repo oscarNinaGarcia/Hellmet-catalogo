@@ -22,8 +22,15 @@ const PRODUCTS = [
     ],
     price: "450",
     images: [
-      "assets/file_00000000d078720e9261732cee3a26f4.png"
-      ,"assets/Screenshot_20260630-155927.png"
+      "assets/pizzero1.png",
+      "assets/pizzero2.png",
+      "assets/pizzero3.png",
+      "assets/pizzero4.png",
+      "assets/pizzero5.png",
+      "assets/pizzero6.png",
+      "assets/pizzero7.png",
+      "assets/pizzero8.png",
+      "assets/pizzero9.png",
     ],
   },
   /*{
