@@ -11,7 +11,7 @@ function renderHeader() {
   return `
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/file_000000004598720ea3542ff2cbdaad59.png" alt="" class="brand-logo" width="36" height="36">
+        <img src="assets/file_000000004598720ea3542ff2cbdaad59.png" alt="" class="brand-logo" width="70" height="70">
         <span class="brand-name">HELLMET</span>
       </a>
       <div class="header-title">

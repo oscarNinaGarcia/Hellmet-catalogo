@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELLMET — Producto</title>
+<link rel="icon" href="assets/file_000000004598720ea3542ff2cbdaad59.png" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="site-header"></header>
+
+<main>
+  <div class="wrap">
+
+    <section class="catalog-detail" aria-label="Detalle del producto">
+
+      <!-- Carrusel deslizable: se arrastra con el dedo o el mouse, sin botones -->
+      <div class="carousel carousel--drag" id="carousel-viewport-wrap">
+        <div class="carousel-viewport" id="carousel-viewport">
+          <div class="carousel-track" id="carousel-track"></div>
+        </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+
+      <!-- Información -->
+      <div class="detail-info">
+        <div class="detail-block">
+          <span id="detail-eyebrow"></span>
+          <h2 id="detail-name"></h2>
+        </div>
+
+        <div class="detail-block">
+          <h3>Descripción</h3>
+          <p id="detail-description"></p>
+        </div>
+
+        <div class="detail-block">
+          <h3>Características</h3>
+          <ul id="detail-features"></ul>
+        </div>
+
+        <div class="detail-block">
+          <h3>Precio</h3>
+          <div class="price-plate">
+            <span class="price-label">USD</span>
+            <span id="detail-price"></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Enlace copiable de este producto -->
+    <div class="share-bar">
+      <span class="share-bar-label">Enlace</span>
+      <input type="text" id="product-link" readonly aria-label="Enlace del producto">
+      <button id="copy-link-btn">Copiar</button>
+      <span class="copy-feedback" id="copy-feedback" role="status"></span>
+    </div>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  const CURRENT_PRODUCT = "horno-4-latas";
+</script>
+<script src="js/producto.js"></script>
+</body>
+</html>
