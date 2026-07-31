@@ -7,22 +7,22 @@
 // la ruta en "src". El "label" queda como texto de respaldo por si
 // esa imagen no se encuentra (no rompe la página).
 const HERO_SLIDES = [
-  { src: "assets/horno3.png", label: "Planta de producción HELLMET" },
-  { src: "assets/pizzero1.png", label: "Línea de hornos industriales" },
+  { src: "assets/horno1.png", label: "Planta de producción HELLMET" },
+  { src: "assets/paisaje_parrilada.png", label: "Línea de hornos industriales" },
   { src: "assets/file_00000000d078720e9261732cee3a26f4.png", label: "Parrillas para uso comercial" },
   /*{ src: "assets/images/hero/4.jpg", label: "Equipos de cocina profesional" },
   { src: "assets/images/hero/5.jpg", label: "Showroom HELLMET" },*/
 ];
 
 const HERO_PALETTES = [
-  ["#2A2E34", "#1B1D21"],
+  ["#10356d", "#1B1D21"],
   ["#33261D", "#1B1D21"],
   ["#1D2A28", "#1B1D21"],
   ["#2A2420", "#1B1D21"],
-  ["#20242A", "#1B1D21"],
+  ["#1659bd", "#1B1D21"],
 ];
 
-const HERO_INTERVAL_MS = 4000;
+const HERO_INTERVAL_MS = 1000;
 
 const heroState = {
   index: 0,

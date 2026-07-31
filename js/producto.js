@@ -21,7 +21,7 @@ const SLIDE_PALETTES = [
 ];
 
 function money(price) {
-  return `$${price}`;
+  return `BS ${price}`;
 }
 
 function renderProductPage() {

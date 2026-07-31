@@ -11,7 +11,6 @@ function renderHeader() {
   return `
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="assets/file_000000004598720ea3542ff2cbdaad59.png" alt="" class="brand-logo" width="70" height="70">
         <span class="brand-name">HELLMET</span>
       </a>
       <div class="header-title">
@@ -21,6 +20,9 @@ function renderHeader() {
       </div>
       <div class="header-spacer" aria-hidden="true"></div>
     </div>
+    <a href="index.html" class="header-logo-badge" aria-label="Ir al inicio">
+      <img src="assets/file_000000004598720ea3542ff2cbdaad59.png" alt="HELLMET">
+    </a>
   `;
 }
 
@@ -34,8 +36,9 @@ function renderFooter() {
       </div>
       <div class="footer-col">
         <h3>Contacto</h3>
-        <p>contacto@hellmet.example</p>
-        <p>+00 000 000 000</p>
+        <p><a href="https://www.facebook.com/marketplace/profile/100088720868308/?ref=permalink&mibextid=dXMIcH">HELLMET (facebook)</a></p>
+        <p><a href="https://vt.tiktok.com/ZSQbwM9An/">HELLMET (TikTok)</a></p>
+        <p>60107222</p>
         <p>Av. Ejemplo 123, Ciudad</p>
       </div>
       <div class="footer-col">
