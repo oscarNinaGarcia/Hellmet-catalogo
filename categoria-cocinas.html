@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="view-transition" content="same-origin">
+<title>HELLMET — Hornos</title>
+<link rel="icon" href="assets/file_000000004598720ea3542ff2cbdaad59.png" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="site-header"></header>
+
+<main>
+  <div class="wrap">
+
+    <!-- Banner de la categoría -->
+    <section class="category-hero">
+      <div class="section-label">
+        <span class="num">02</span>
+        <h2>Categoría</h2>
+      </div>
+      <h1 id="category-name"></h1>
+      <p id="category-description"></p>
+    </section>
+
+    <!-- Productos de esta categoría, en filas de 3 -->
+    <section aria-label="Productos de la categoría">
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  const CURRENT_CATEGORY = "cocinas";
+</script>
+<script src="js/categoria.js"></script>
+</body>
+</html>
