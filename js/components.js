@@ -31,11 +31,10 @@ function renderFooter() {
     <div class="footer-inner">
       <div class="footer-col">
         <h3>Compañía</h3>
-        <p>HELLMET diseña y fabrica equipo de protección para motociclismo desde el taller hasta la pista.</p>
-        <p>Texto de relleno, reemplazar más adelante por la información real de la empresa.</p>
+        <p><b>HELLMET</b> Diseña y fabrica soluciones de cocción de alta calidad, desarrolladas para satisfacer las necesidades de panaderías, pastelerías, restaurantes, emprendimientos gastronómicos e industrias alimentarias, acompañando cada etapa de la producción con equipos confiables, eficientes y duraderos.</p>
       </div>
       <div class="footer-col">
-        <h3>Contacto</h3>
+        <h3>Contactos</h3>
         <p><a href="https://www.facebook.com/marketplace/profile/100088720868308/?ref=permalink&mibextid=dXMIcH">HELLMET (facebook)</a></p>
         <p><a href="https://vt.tiktok.com/ZSQbwM9An/">HELLMET (TikTok)</a></p>
         <p>60107222</p>
@@ -43,8 +42,7 @@ function renderFooter() {
       </div>
       <div class="footer-col">
         <h3>Legal</h3>
-        <p>Términos y condiciones — texto provisional.</p>
-        <p>Política de privacidad — texto provisional.</p>
+        
         <p>© <span id="footer-year"></span> HELLMET. Todos los derechos reservados.</p>
       </div>
     </div>

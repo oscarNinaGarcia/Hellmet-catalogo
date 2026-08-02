@@ -1,21 +1,26 @@
 /* =========================================================
    HELLMET — Estilos
-   Paleta: aluminio cepillado (header) + beige cálido (contenido)
+   Paleta: aluminio cepillado (header/footer) + gris perla elegante
+   + acentos vino profundo y dorado latón
    Tipografía: Oswald (títulos), Inter (cuerpo), JetBrains Mono (datos)
    ========================================================= */
 
 :root {
-  --bg: #F1E6CE;          /* crema cálido */
---bg-panel: #E8D8B0;    /* tarjetas, carrusel */
---bg-panel-2: #D8BE84;  /* fondos de respaldo, más saturado */
---line: #B9995A;        /* bordes tipo bronce */
---text: #1E140A;        /* texto — casi negro con matiz café */
---text-dim: #6B5233;    /* texto secundario */
---accent: #8C1F1F;      /* rojo vino profundo — antes era naranja/óxido */
---accent-2: #B98B24;    /* dorado latón — más rico y saturado */
---accent-hover: #A32B2B;
+  --bg: #E9E6DF;          /* gris perla cálido */
+  --bg-panel: #DCD8CD;    /* tarjetas, carrusel */
+  --bg-panel-2: #C7C0AE;  /* fondos de respaldo, más saturado */
+  --line: #A79D86;        /* bordes tipo bronce apagado */
+  --text: #201C16;        /* texto — casi negro con matiz café */
+  --text-dim: #5C5548;    /* texto secundario */
+  --accent: #7A1E1E;      /* rojo vino profundo */
+  --accent-2: #A9832B;    /* dorado latón */
+  --accent-hover: #932525;
+  --accent-glow: rgba(122, 30, 30, 0.35);
+  --accent-2-glow: rgba(169, 131, 43, 0.35);
 
-  /* Exclusivo del header: degradado metálico tipo aluminio cepillado */
+  --radius: 10px;
+
+  /* Exclusivo del header/footer: degradado metálico tipo aluminio cepillado */
   --header-gradient: linear-gradient(135deg, #6e6c6c 0%, #DCDCDC 20%, #6e6c6c 45%, #9C9C9C 55%, #C7C7C7 75%, #6e6c6c 100%);
   --header-line: rgba(0, 0, 0, 0.25);
 
@@ -274,6 +279,7 @@ main {
 
 .category-card:hover .category-card-image {
   border-color: var(--accent);
+  box-shadow: 0 8px 22px var(--accent-glow);
   transform: translateY(-3px);
 }
 
@@ -313,6 +319,7 @@ main {
   margin: 40px 0 48px;
   padding: 32px;
   border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--bg-panel);
   text-align: center;
 }
@@ -359,13 +366,16 @@ main {
   position: relative;
   aspect-ratio: 4 / 3;
   border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--bg-panel);
   overflow: hidden;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .product-card:hover .product-card-image {
   border-color: var(--accent);
+  box-shadow: 0 8px 22px var(--accent-glow);
+  transform: translateY(-3px);
 }
 
 .product-card-image img {
@@ -414,6 +424,7 @@ main {
 .carousel {
   position: relative;
   border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--bg-panel);
   overflow: hidden;
 }
@@ -622,6 +633,7 @@ main {
   align-items: baseline;
   gap: 10px;
   border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--bg-panel);
   padding: 12px 18px;
 }
@@ -646,6 +658,7 @@ main {
 .share-bar {
   margin: 36px 0 56px;
   border: 1px solid var(--line);
+  border-radius: var(--radius);
   background: var(--bg-panel);
   padding: 14px 16px;
   display: flex;
@@ -667,6 +680,7 @@ main {
   min-width: 0;
   background: var(--bg);
   border: 1px solid var(--line);
+  border-radius: 6px;
   color: var(--text-dim);
   font-family: var(--font-mono);
   font-size: 13px;
@@ -679,6 +693,7 @@ main {
   background: var(--accent);
   color: var(--bg);
   border: none;
+  border-radius: 6px;
   font-family: var(--font-display);
   font-size: 12.5px;
   letter-spacing: 0.08em;
@@ -686,11 +701,12 @@ main {
   font-weight: 600;
   padding: 10px 18px;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
 }
 
 #copy-link-btn:hover {
   background: var(--accent-hover);
+  box-shadow: 0 6px 16px var(--accent-glow);
 }
 
 .copy-feedback {
@@ -704,8 +720,8 @@ main {
 /* ---------- Footer ---------- */
 
 footer#site-footer {
-  border-top: 1px solid var(--line);
-  background: var(--bg-panel);
+  border-top: 1px solid var(--header-line);
+  background: var(--header-gradient);
 }
 
 .footer-inner {
@@ -722,7 +738,7 @@ footer#site-footer {
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent-2);
+  color: var(--accent);
   margin: 0 0 12px;
   font-weight: 500;
 }
@@ -730,7 +746,7 @@ footer#site-footer {
 .footer-col p {
   margin: 0 0 8px;
   font-size: 13px;
-  color: var(--text-dim);
+  color: var(--text);
   font-family: var(--font-mono);
 }
 
